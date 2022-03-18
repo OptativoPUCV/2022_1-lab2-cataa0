@@ -97,3 +97,22 @@ list.c:93:9: error: ‘List {aka struct List}’ has no member named ‘next’
 cc1: all warnings being treated as errors
 Compilation failed
 20ce7e3
+Fri Mar 18 17:12:06 UTC 2022: 
+ list.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:90:16: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   Node *node = createnode(data);
+                ^~~~~~~~~~
+                createNode
+list.c:90:16: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:97:10: error: expected ‘(’ before ‘{’ token
+   else if{
+          ^
+list.c:100:10: error: expected ‘(’ before ‘{’ token
+   else if{
+          ^
+cc1: all warnings being treated as errors
+Compilation failed
+8119808
