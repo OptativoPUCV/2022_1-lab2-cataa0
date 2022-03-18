@@ -81,3 +81,19 @@ Fri Mar 18 15:09:49 UTC 2022:
  tests:  10|2
 total_score: 45/70
 656207e
+Fri Mar 18 17:02:52 UTC 2022: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:90:16: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   Node *node = createnode(data);
+                ^~~~~~~~~~
+                createNode
+list.c:90:16: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:93:9: error: ‘List {aka struct List}’ has no member named ‘next’
+     list->next->prev=node;
+         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+20ce7e3
