@@ -53,3 +53,13 @@ Fri Mar 18 14:54:09 UTC 2022:
  tests:  9|3
 total_score: 35/70
 897eda2
+Fri Mar 18 15:01:07 UTC 2022: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:79:7: error: ‘List {aka struct List}’ has no member named ‘size’
+   list->size++;
+       ^~
+Compilation failed
+063d7c3
