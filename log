@@ -116,3 +116,22 @@ list.c:100:10: error: expected ‘(’ before ‘{’ token
 cc1: all warnings being treated as errors
 Compilation failed
 8119808
+Fri Mar 18 17:18:44 UTC 2022: 
+ list.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:90:16: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   Node *node = createnode(data);
+                ^~~~~~~~~~
+                createNode
+list.c:90:16: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:97:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+   else
+   ^~~~
+list.c:100:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+     list->head=node;
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c9de77c
