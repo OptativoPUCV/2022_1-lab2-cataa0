@@ -30,3 +30,14 @@ list.c:50:11: error: expected expression before ‘->’ token
            ^~
 Compilation failed
 644b2b5
+Fri Mar 18 14:50:47 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:49:11: error: ‘List {aka struct List}’ has no member named ‘cuurent’; did you mean ‘current’?
+     list->cuurent =list->current->next;
+           ^~~~~~~
+           current
+Compilation failed
+5c61f9e
