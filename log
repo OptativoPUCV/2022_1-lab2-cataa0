@@ -16,3 +16,17 @@ Fri Mar 18 14:36:15 UTC 2022:
  tests:  3|5
 total_score: 15/70
 17084d6
+Fri Mar 18 14:50:37 UTC 2022: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:49:11: error: ‘List {aka struct List}’ has no member named ‘cuurent’; did you mean ‘current’?
+     list->cuurent =list->current->next;
+           ^~~~~~~
+           current
+list.c:50:11: error: expected expression before ‘->’ token
+     return->list->current->data;
+           ^~
+Compilation failed
+644b2b5
