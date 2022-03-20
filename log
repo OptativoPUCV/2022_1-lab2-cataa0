@@ -217,3 +217,18 @@ Sun Mar 20 14:13:35 UTC 2022:
  tests:  10|2
 total_score: 45/70
 d9f745a
+Sun Mar 20 14:23:39 UTC 2022: 
+ list.c | 15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+list.c:98:5: error: expected identifier or ‘(’ before ‘else’
+   } else if(list->head==NULL){
+     ^~~~
+list.c:100:4: error: expected identifier or ‘(’ before ‘else’
+   }else{
+    ^~~~
+list.c:103:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Compilation failed
+42cb676
