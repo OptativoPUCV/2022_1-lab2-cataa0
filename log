@@ -802,3 +802,23 @@ Sun Mar 20 21:45:15 UTC 2022:
  1 file changed, 5 deletions(-)
  tests:  0|0
 9acaca9
+Sun Mar 20 21:48:03 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:120:33: error: expected ‘)’ before ‘{’ token
+   if(list->current->prev == NULL{
+                                 ^
+list.c:140:1: error: expected expression before ‘}’ token
+ }
+ ^
+list.c:118:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+   void *aux = list->current->data;
+         ^~~
+list.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+5997168
