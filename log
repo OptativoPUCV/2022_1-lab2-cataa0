@@ -370,3 +370,8 @@ list.c:120:31: error: ‘Node {aka struct Node}’ has no member named ‘nect�
                                next
 Compilation failed
 9fe3bd8
+Sun Mar 20 18:49:11 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+0f8da11
