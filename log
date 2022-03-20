@@ -699,3 +699,9 @@ list.c:137:5: error: ‘ist’ undeclared (first use in this function); did you 
 list.c:137:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1640241
+Sun Mar 20 21:21:55 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+331b53c
