@@ -157,3 +157,20 @@ list.c:101:5: note: ...this statement, but the latter is misleadingly indented a
 cc1: all warnings being treated as errors
 Compilation failed
 562934b
+Sun Mar 20 13:46:59 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:94:5: error: expected ‘;’ before ‘list’
+     list->current->prev=node;
+     ^~~~
+list.c:98:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+   else
+   ^~~~
+list.c:101:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+     list->head=node;
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0536dca
