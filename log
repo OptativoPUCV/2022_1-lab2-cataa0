@@ -395,3 +395,20 @@ Sun Mar 20 18:54:05 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c53987f
+Sun Mar 20 19:22:28 UTC 2022: 
+ list.c | 21 ++++++++++++++++-----
+ 1 file changed, 16 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:131:29: error: ‘List {aka struct List}’ has no member named ‘prev’
+     list->current->prev=list->prev->prev;
+                             ^~
+list.c:132:35: error: ‘List {aka struct List}’ has no member named ‘next’
+     list->current->prev->next=list->next;
+                                   ^~
+list.c:118:9: error: unused variable ‘node’ [-Werror=unused-variable]
+   Node *node = list->current->data;
+         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7ee0337
