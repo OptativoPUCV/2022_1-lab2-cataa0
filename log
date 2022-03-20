@@ -380,3 +380,13 @@ Sun Mar 20 18:50:20 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 42bb642
+Sun Mar 20 18:51:55 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:123:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+Compilation failed
+0857363
