@@ -359,3 +359,14 @@ list.c:117:9: error: unused variable ‘node’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0e2bd32
+Sun Mar 20 18:49:00 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:120:31: error: ‘Node {aka struct Node}’ has no member named ‘nect’; did you mean ‘next’?
+     node->next=list->current->nect;
+                               ^~~~
+                               next
+Compilation failed
+9fe3bd8
