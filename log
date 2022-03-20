@@ -437,3 +437,8 @@ list.c:118:9: error: unused variable ‘node’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 3daabf7
+Sun Mar 20 19:24:45 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+f420e06
