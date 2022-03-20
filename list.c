@@ -135,6 +135,13 @@ void * popCurrent(List * list) {
     list->current=list->current->next;
  
   }
+  else{
+     
+    list->head=NULL;
+    list->tail=NULL;
+    list->current= NULL;
+  
+  }
   free(nodo);
   return aux;
 }
