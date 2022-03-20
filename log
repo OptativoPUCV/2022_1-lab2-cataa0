@@ -232,3 +232,18 @@ list.c:103:1: error: expected identifier or ‘(’ before ‘}’ token
  ^
 Compilation failed
 42cb676
+Sun Mar 20 14:24:05 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c:98:5: error: expected identifier or ‘(’ before ‘else’
+   } else if(list->head==NULL){
+     ^~~~
+list.c:100:4: error: expected identifier or ‘(’ before ‘else’
+   }else{
+    ^~~~
+list.c:103:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Compilation failed
+bd8cdfc
