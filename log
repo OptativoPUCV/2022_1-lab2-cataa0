@@ -687,3 +687,15 @@ Sun Mar 20 21:21:27 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 cb4c77a
+Sun Mar 20 21:21:48 UTC 2022: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:137:5: error: ‘ist’ undeclared (first use in this function); did you mean ‘list’?
+     ist->current->prev=list->current->prev->prev;
+     ^~~
+     list
+list.c:137:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1640241
