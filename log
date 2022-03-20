@@ -553,3 +553,14 @@ Sun Mar 20 20:52:11 UTC 2022:
  tests:  11|1
 total_score: 55/70
 7c31ee8
+Sun Mar 20 20:54:26 UTC 2022: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:141:15: error: statement with no effect [-Werror=unused-value]
+     list->tail==NULL;
+               ^
+cc1: all warnings being treated as errors
+Compilation failed
+84c1d6d
