@@ -188,3 +188,9 @@ list.c:101:5: note: ...this statement, but the latter is misleadingly indented a
 cc1: all warnings being treated as errors
 Compilation failed
 ce2c448
+Sun Mar 20 13:48:18 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+16264e3
